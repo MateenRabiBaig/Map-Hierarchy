@@ -2,7 +2,7 @@
 
 This project is a React-based interactive map application designed to visualize and compare two different approaches for rendering hierarchical geospatial data. It contrasts a "smart" geometry generation approach using **Turf.js** against a "naive" rendering approach using standard **Leaflet** polygons.
 
-## 🚀 Features
+##  Features
 
 - **Dual Rendering Modes**:
   - **Turf.js Mode (Red)**: Uses geospatial analysis (Convex Hulls) to intelligently generate zone and division boundaries from scattered point data.
@@ -19,14 +19,14 @@ This project is a React-based interactive map application designed to visualize 
   - Breadcrumb-style navigation (Back buttons).
   - Tooltips and Popups for data inspection.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Frontend Framework**: React (with TypeScript)
 - **Build Tool**: Vite
 - **Mapping Library**: [Leaflet](https://leafletjs.com/) & [React-Leaflet](https://react-leaflet.js.org/)
 - **Geospatial Analysis**: [Turf.js](https://turfjs.org/)
 
-## 📦 Installation
+##  Installation
 
 1.  **Clone the repository**
     ```bash
@@ -47,7 +47,7 @@ This project is a React-based interactive map application designed to visualize 
 4.  **Open in Browser**
     Navigate to `http://localhost:5173` (or the port shown in your terminal).
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 src/
@@ -68,7 +68,7 @@ src/
 └── App.tsx                  # Main application logic and layout
 ```
 
-## 🔍 The Comparison
+##  The Comparison
 
 ### Turf.js Approach (Red)
 - **Logic**: Takes a set of points belonging to a Zone or Division and calculates the **Convex Hull**.
