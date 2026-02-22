@@ -17,7 +17,7 @@ export default function Divisions({ things, zone, onDivisionClick }) {
 
     const divisionMap = {};
     filtered.forEach(t => {
-        divisionMap[t.division] || = [];
+        divisionMap[t.division] ||= [];
         divisionMap[t.division].push(t);
     });
 
@@ -55,7 +55,7 @@ export default function Divisions({ things, zone, onDivisionClick }) {
                         <Polyline
                             key={division}
                             positions={positions}
-                            pathOptions={{DIVISION_STYLE}}
+                            pathOptions={DIVISION_STYLE}
                             eventHandlers={{ click: () => onDivisionClick(division) }}
                         >
                             <Tooltip sticky><strong>Division: </strong>{division}</Tooltip>

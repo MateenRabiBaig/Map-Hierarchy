@@ -15,13 +15,13 @@ export default function Zones({ things, onZoneClick }) {
 
     things.forEach(t => {
         if (!t.zone) return;
-        zones[t.zone] || = [];
+        zones[t.zone] ||= [];
         zones[t.zone].push(t);
     });
 
     return (
         <>
-            {Object.entries(zones).map(([zones, zoneThings]) => {
+            {Object.entries(zones).map(([zone, zoneThings]) => {
                 const points = zoneThings.map(t => ({
                     lat: t.lat,
                     lng: t.lng
@@ -41,7 +41,7 @@ export default function Zones({ things, onZoneClick }) {
                             eventHandlers={{ click: () => onZoneClick(zone) }}
                         >
                             <Tooltip sticky>
-                                <strong>Zone:</strong>
+                                <strong>Zone:</strong> {zone}
                             </Tooltip>
                         </Polygon>
                     )
